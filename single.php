@@ -10,7 +10,7 @@ if (empty($id)) {
 require_once 'includes/db.php';
 
 $sql = $db->prepare('
-	SELECT id, name, street_address, longitude, latitude
+	SELECT id, name, street_address, longitude, latitude, rate, ratetotal
 	FROM locations
 	WHERE id = :id
 ');
@@ -53,9 +53,9 @@ if (empty($results)) {
 	<article>
 		<h1><?php echo $results['name']; ?></h1>
 		 <ul>
-			<li><b>Street Address:</b> <?php echo $results['street_address']; ?></p></li>
+			<li><b>Street Address:</b> <?php echo $results['address']; ?></p></li>
 			<li><b>Longitude:</b> <?php echo $results['longitude']; ?></p></li>
-			<li><b>Latitude:</b> <?php echo $results['longitude']; ?></p></li>
+			<li><b>Latitude:</b> <?php echo $results['latitude']; ?></p></li>
 		</ul>
 	 </article>
 	 

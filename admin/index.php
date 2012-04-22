@@ -3,16 +3,34 @@
 require_once '../includes/db.php';
 
 $results = $db->query('
-	SELECT id, name, street_address, longitude, latitude
+	SELECT id, name, address, longitude, latitude
 	FROM locations
-	ORDER BY street_address DESC
+	ORDER BY address ASC
+');
+
+?>
+<?php
+
+require_once '../includes/users.php';
+
+if (!user_signed_in()) {
+header('Location: sign-in.php');
+exit;
+}
+
+require_once '../includes/db.php';
+
+$results = $db->query('
+SELECT id, name, address, longitude, latitude, ratetotal, rate
+FROM locations
+ORDER BY name ASC
 ');
 
 ?><!DOCTYPE HTML>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Adminr</title>
+	<title>Admin</title>
 </head>
 <body>
 	<header>	
@@ -44,6 +62,13 @@ $results = $db->query('
 				&middot; <a href="delete.php?id=<?php echo $location['id']; ?>">Delete</a>
 			<?php endforeach; ?>
 		</ul>
+        <a href="sign-out.php">Sign Out</a>
+
+<ol class="location">
+<?php foreach ($results as $location) : ?>
+<li><?php echo $location['name']; ?></li>
+<?php endforeach; ?>
+</ol>
 	</article>
 	
 </body>

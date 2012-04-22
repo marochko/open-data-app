@@ -3,9 +3,9 @@
 require_once 'includes/db.php';
 
 $results = $db->query('
-	SELECT id, name, street_address, longitude, latitude
+	SELECT id, name, address, longitude, latitude, rate, ratetotal
 	FROM locations
-	ORDER BY street_address DESC
+	ORDER BY address DESC
 ');
 
 ?>
@@ -37,6 +37,12 @@ $results = $db->query('
 		
 		<ol class="locations">
 			<?php foreach ($results as $location) : ?>
+            <?php if ($location['ratetotal'] > 0) {
+				$rating = round($location['rate'] / $location['ratetotal']);
+			} else {
+				$rating = 0;
+				}
+			?>
 				<li itemscope itemtype="http://schema.org/TouristAttraction">
 					<a href="single.php?id=<?php echo $location['id']; ?>" itemprop="name"><?php echo $location['name']; ?></a>
 					<span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">

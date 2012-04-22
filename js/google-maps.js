@@ -18,9 +18,15 @@ $(document).ready(function () {
 
 		// Create some HTML content for the info window
 		// Style the content in your CSS
-		var info = '<div class="info-window">'
+		/*var info = '<div class="info-window">'
 			+ '<strong>' + location + '</strong>'
 			+ '</div>'
+		;*/
+		
+		var info = '<div class="info-window">'
+		+ '<strong>' + location + '</strong>'
+		+ '<a href="single.php?id=' + $(this).attr('data-id') + '">Rate or Comment!</a>'
+		+ '</div>'
 		;
 
 		// Determine this dino's latitude and longitude
