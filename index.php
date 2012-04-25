@@ -3,7 +3,7 @@
 require_once 'includes/db.php';
 
 $results = $db->query('
-	SELECT id, name, address, longitude, latitude, rate, ratetotal
+	SELECT id, name, address, longitude, latitude, rate_count, rate_total
 	FROM locations
 	ORDER BY address DESC
 ');
@@ -42,8 +42,8 @@ $results = $db->query('
 <?php foreach ($results as $odr) : ?>
 
 	<?php
-		if ($odr['rate'] > 0) {
-			$rating = round($odr['ratetotal'] / $odr['rate']);
+		if ($odr['rate_count'] > 0) {
+			$rating = round($odr['rate_total'] / $odr['rate_count']);
 		} else {
 			$rating = 0;
 		}
