@@ -52,6 +52,48 @@ a:active {
 }
 
 li {
-	list-style-type:square;
+	list-style-type:none;
 }
 
+.rater {
+display: inline-block;
+margin: 0;
+padding: 0;
+vertical-align: middle;
+
+list-style-type: none;
+line-height: 1;
+}
+
+.rater-level {
+float: left;
+
+color: #efecd2;
+}
+
+.rater-level a,
+.rater-level a:link,
+.rater-level a:visited {
+color: #efecd2;
+text-decoration: none
+}
+
+.rater-level a:hover,
+.rater-level a:focus,
+.rater-level a:active,
+.is-rated,
+.is-rated a,
+.is-rated a:link,
+.is-rated a:visited,
+.is-rated a:hover,
+.is-rated a:focus,
+.is-rated a:active,
+.is-rated-hover a,
+.is-rated-hover a:link,
+.is-rated-hover a:visited {
+color: #ffe91f;
+}
+
+.info-window strong {
+display: block;
+}
