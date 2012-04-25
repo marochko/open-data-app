@@ -26,6 +26,16 @@ if (empty($results)) {
 	header('Location: index.php');
 	exit;
 }
+$title = $locations['name'];
+
+if ($locations['ratetotal'] > 0) {
+	$rating = round($locations['rate'] / $dino['ratetotal']);
+} else {
+	$rating = 0;
+}
+
+$cookie = get_rate_cookie();
+
 
 ?>
 
