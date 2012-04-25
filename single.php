@@ -8,9 +8,10 @@ if (empty($id)) {
 }
 
 require_once 'includes/db.php';
+require_once 'includes/functions.php';
 
 $sql = $db->prepare('
-	SELECT id, name, street_address, longitude, latitude, rate, ratetotal
+	SELECT id, name, address, longitude, latitude, rate, ratetotal
 	FROM locations
 	WHERE id = :id
 ');
@@ -34,7 +35,7 @@ if (empty($results)) {
 	<meta charset=utf-8>
 	<title><?php echo $results['name']; ?> &middot; Ottawa's ODR App</title>
 	<link href="css/public.css" rel="stylesheet">
-	<script src="js/modernizr.dev.js"></script>
+	<script src="js/modernizr.js"></script>
 </head>
 <body>
 

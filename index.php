@@ -8,9 +8,7 @@ $results = $db->query('
 	ORDER BY address DESC
 ');
 
-?>
-
-<!DOCTYPE HTML>
+?><!DOCTYPE HTML>
 <html lang=en-ca>
 <head>
 	<meta charset=utf-8>
@@ -19,7 +17,6 @@ $results = $db->query('
 	<script src="js/modernizr.dev.js"></script>
 </head>
 <body>
-
 	<header>	
 		<h1>Ottawa's ODR App</h1>
 		<nav>
@@ -34,33 +31,51 @@ $results = $db->query('
 	<article>
 	
 		<h2>Locations</h2>
-		
-		<ol class="locations">
-			<?php foreach ($results as $location) : ?>
-            <?php if ($location['ratetotal'] > 0) {
-				$rating = round($location['rate'] / $location['ratetotal']);
-			} else {
-				$rating = 0;
-				}
-			?>
-				<li itemscope itemtype="http://schema.org/TouristAttraction">
-					<a href="single.php?id=<?php echo $location['id']; ?>" itemprop="name"><?php echo $location['name']; ?></a>
-					<span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
-						<meta itemprop="latitude" content="<?php echo $location['latitude']; ?>">
-						<meta itemprop="longitude" content="<?php echo $location['longitude']; ?>">
-					</span>
-				</li>
-			<?php endforeach; ?>
+
+<button id="geo">Find Me</button>
+<form id="geo-form">
+    <label for="adr">Address</label>
+    <input id="adr">
+</form>
+
+<ol class="locations">
+<?php foreach ($results as $odr) : ?>
+
+	<?php
+		if ($odr['rate'] > 0) {
+			$rating = round($odr['ratetotal'] / $odr['rate']);
+		} else {
+			$rating = 0;
+		}
+	?>
+
+	<li itemscope itemtype="http://schema.org/TouristAttraction" data-id="<?php echo $odr['id']; ?>">
+		<strong class="distance"></strong>
+		<a href="single.php?id=<?php echo $odr['id']; ?>" itemprop="name"><?php echo $odr['name']; ?></a>
+		<span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+			<meta itemprop="latitude" content="<?php echo $odr['latitude']; ?>">
+			<meta itemprop="longitude" content="<?php echo $odr['longitude']; ?>">
+		</span>
+		<meter value="<?php echo $rating; ?>" min="0" max="5"><?php echo $rating; ?> out of 5</meter>
+		<ol class="rater">
+		<?php for ($i = 1; $i <= 5; $i++) : ?>
+			<?php $class = ($i <= $rating) ? 'is-rated' : ''; ?>
+			<li class="rater-level <?php echo $class; ?>">★</li>
+		<?php endfor; ?>
 		</ol>
-		
+	</li>
+<?php endforeach; ?>
+</ol>
+
 		<div id="map"></div>
 		
 	</article>
 
-</body>
-</html>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCkXYdCxOIr9-DwpF18ejWqV8C01jbmgxA&sensor=false"></script>
-<script src="js/google-maps.js"></script>
-
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCOSF6EUJHi28FLeCSkKsQsG1gtn4vRkN4&sensor=false"></script>
+<script src="js/latlng.min.js"></script>
+<script src="js/odr.js"></script>
+</body>
+</html>
