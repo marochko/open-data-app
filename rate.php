@@ -23,7 +23,7 @@ if (isset($cookie[$id]) || $rate < 0 || $rate > 5) {
 
 $sql = $db->prepare('
 	UPDATE locations
-	SET ratetotal = ratetotal + 1, rate = rate + :rate
+	SET rate_count = rate_count + 1, rate_total = rate_total + :rate
 	WHERE id = :id
 ');
 $sql->bindValue(':id', $id, PDO::PARAM_INT);
