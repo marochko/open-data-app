@@ -21,7 +21,7 @@ exit;
 require_once '../includes/db.php';
 
 $results = $db->query('
-SELECT id, name, address, longitude, latitude, ratetotal, rate
+SELECT id, name, address, longitude, latitude, rate_count, rate_total
 FROM locations
 ORDER BY name ASC
 ');
@@ -34,13 +34,13 @@ ORDER BY name ASC
 </head>
 <body>
 	<header>	
-		<h1>Ottawa's ODR App</h1>
+		<h1><img src="../images/title.png" height="150" width="300"></h1>
 		<nav>
 			<h2>Navigation</h2>
 			<ul>
-				<li><a href="../index.php">Home</a></li>
-				<li><a href="index.php">Administration</a></li>
-				<li><a href="http://imm.edumedia.ca/maro0030/open-data-app">Project Brief</a>
+				<li><a href="../index.php"><img src="../images/home.png" height="60" width="300"></a></li>
+				<li><a href="admin/index.php"><img src="../images/admin.png" height="60" width="300"></a></li>
+				<li><a href="http://imm.edumedia.ca/maro0030/open-data-app"><a href="http://imm.edumedia.ca/maro0030/mtm1526/open-data-app"><img src="../images/brief.png" height="60" width="300"></a>
 			</ul>
 		</nav>
 	</header>
@@ -56,17 +56,18 @@ ORDER BY name ASC
 		<p>Manage your app's data entries using the management system below.</p>
 		
 		<ul>
-			
+			<?php foreach ($results as $results) : ?>
 				<li><a href="../single.php?id=<?php echo $results['id']; ?>"><?php echo $results['name']; ?></a></li>
 				&middot; <a href="edit.php?id=<?php echo $results['id']; ?>">Edit</a>
 				&middot; <a href="delete.php?id=<?php echo $results['id']; ?>">Delete</a>
-
+			<?php endforeach; ?>
 		</ul>
         <a href="sign-out.php">Sign Out</a>
 
 <ol class="location">
+<?php foreach ($results as $results) : ?>
 <li><?php echo $results['name']; ?></li>
-
+<?php endforeach; ?>
 </ol>
 	</article>
 	

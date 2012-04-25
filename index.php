@@ -24,7 +24,7 @@ $results = $db->query('
 			<ul>
 				<li><a href="index.php"><img src="images/home.png" height="60" width="300"></a></li>
 				<li><a href="admin/index.php"><img src="images/admin.png" height="60" width="300"></a></li>
-				<li><a href="http://imm.edumedia.ca/maro0030/open-data-app"><img src="images/brief.png" height="60" width="300"></a>
+				<li><a href="http://imm.edumedia.ca/maro0030/mtm1526/open-data-app"><img src="images/brief.png" height="60" width="300"></a>
 			</ul>
 		</nav>
 	</header>
