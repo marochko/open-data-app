@@ -31,13 +31,13 @@ $results = $db->query('
 	<article>
 	
 		<h2>Locations</h2>
-
+<div id="map"></div>
 <button id="geo">Find Me</button>
 <form id="geo-form">
     <label for="adr">Address</label>
     <input id="adr">
 </form>
-
+<div id="dataset">
 <ol class="locations">
 <?php foreach ($results as $odr) : ?>
 
@@ -66,8 +66,9 @@ $results = $db->query('
 	</li>
 <?php endforeach; ?>
 </ol>
+</div>
 
-		<div id="map"></div>
+		
 		
 	</article>
 
