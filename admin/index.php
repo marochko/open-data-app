@@ -56,18 +56,17 @@ ORDER BY name ASC
 		<p>Manage your app's data entries using the management system below.</p>
 		
 		<ul>
-			<?php foreach ($results as $location) : ?>
-				<li><a href="../single.php?id=<?php echo $location['id']; ?>"><?php echo $location['name']; ?></a></li>
-				&middot; <a href="edit.php?id=<?php echo $location['id']; ?>">Edit</a>
-				&middot; <a href="delete.php?id=<?php echo $location['id']; ?>">Delete</a>
-			<?php endforeach; ?>
+			
+				<li><a href="../single.php?id=<?php echo $results['id']; ?>"><?php echo $results['name']; ?></a></li>
+				&middot; <a href="edit.php?id=<?php echo $results['id']; ?>">Edit</a>
+				&middot; <a href="delete.php?id=<?php echo $results['id']; ?>">Delete</a>
+
 		</ul>
         <a href="sign-out.php">Sign Out</a>
 
 <ol class="location">
-<?php foreach ($results as $location) : ?>
-<li><?php echo $location['name']; ?></li>
-<?php endforeach; ?>
+<li><?php echo $results['name']; ?></li>
+
 </ol>
 	</article>
 	

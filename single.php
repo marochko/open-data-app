@@ -50,13 +50,13 @@ $cookie = get_rate_cookie();
 <body>
 
 	<header>	
-		<h1>Ottawa's ODR App</h1>
+		<h1><img src="images/title.png" height="150" width="300"></h1>
 		<nav>
 			<h2>Navigation</h2>
 			<ul>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="admin/index.php">Administration</a></li>
-				<li><a href="http://imm.edumedia.ca/maro0030/open-data-app">Project Brief</a>
+				<li><a href="index.php"><img src="images/home.png" height="60" width="300"></a></li>
+				<li><a href="admin/index.php"><img src="images/admin.png" height="60" width="300"></a></li>
+				<li><a href="http://imm.edumedia.ca/maro0030/open-data-app"><img src="images/brief.png" height="60" width="300"></a>
 			</ul>
 		</nav>
 	</header>

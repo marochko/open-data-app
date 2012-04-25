@@ -5,6 +5,8 @@ html{
 
 body {
 	background-color:#0CF;
+	background:url(../images/background.png) 50%;
+	
 	font: normal 1.5/100% Arial, Helvetica, sans-serif;
 	color: #000;	
 }
