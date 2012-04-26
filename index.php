@@ -1,3 +1,14 @@
+/* 
+  * This is the index page, or the homepage.
+  *
+  * The primary functions are to link up all of the elements included in the app.
+  * 
+  *
+  * @author  Amanda Marochko <amanda.marochko@gmail.com>
+  *
+  * @since 1.0
+*/ 
+
 <?php
 
 require_once 'includes/db.php';

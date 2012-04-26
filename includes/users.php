@@ -1,3 +1,14 @@
+/* 
+  * This is the users page.
+  *
+  * It is in place so that we can have a password protected log-in function. 
+  * 
+  * 
+  *
+  * @author  Amanda Marochko <amanda.marochko@gmail.com>
+  *
+  * @since 1.0
+*/ 
 <?php
 
 function user_create ($db, $email, $password) {

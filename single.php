@@ -1,3 +1,14 @@
+/* 
+  * This is the single page
+  *
+  * The single page allows you to target and view a single piece of data within the set.
+  * 
+  *
+  * @author  Amanda Marochko <amanda.marochko@gmail.com>
+  *
+  * @since 1.0
+*/ 
+
 <?php
 
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);

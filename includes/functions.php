@@ -1,3 +1,14 @@
+/* 
+  * This is the functions page.
+  *
+  * The primary functions targeted are the geolocation function and the rating function
+  * 
+  *
+  * @author  Amanda Marochko <amanda.marochko@gmail.com>
+  *
+  * @since 1.0
+*/ 
+
 <?php
 
 /**

@@ -1,4 +1,16 @@
-<?php
+/* 
+  * This is the Admin index page.
+  *
+  * Here you can add, edit, or delete a dataset. 
+  * It is password protected through the create_user and database, so only certain 
+  * individuals can access it.
+  *
+  * @author  Amanda Marochko <amanda.marochko@gmail.com>
+  *
+  * @since 1.0
+*/ 
+
+  <?php
 
 require_once '../includes/db.php';
 
