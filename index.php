@@ -30,6 +30,7 @@ $results = $db->query('
 	<script src="js/modernizr.dev.js"></script>
 </head>
 <body>
+<div id="side">
 	<header>	
 		<h1><img src="images/title.png" height="150" width="300"></h1>
 		<nav>
@@ -74,6 +75,7 @@ $results = $db->query('
 	</li>
 <?php endforeach; ?>
 </ol>
+</div>
 </div>
 <div id="map"></div>
 <button id="geo">Find Me</button>

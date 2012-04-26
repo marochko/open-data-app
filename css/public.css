@@ -19,6 +19,10 @@ body {
 	width:50%;
 }
 
+#side {
+	width:40%;
+}
+
 #dataset {
 	width:350px;
 	height:350px;
