@@ -45,6 +45,11 @@ $results = $db->query('
 	<article>
 	
 		<h2>Locations</h2>
+<button id="geo">Find Me</button>
+<form id="geo-form">
+    <label for="adr">Address</label>
+    <input id="adr">
+</form>
 
 <div id="dataset">
 <ol class="locations">
@@ -78,11 +83,7 @@ $results = $db->query('
 </div>
 </div>
 <div id="map"></div>
-<button id="geo">Find Me</button>
-<form id="geo-form">
-    <label for="adr">Address</label>
-    <input id="adr">
-</form>
+
 		
 		
 	</article>
