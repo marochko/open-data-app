@@ -1,3 +1,5 @@
+
+<?php
 /**
 		 *small description: sign in function
 		 *
@@ -9,7 +11,6 @@
 		 *@version 1.0.0
 */
 
-<?php
 
 require_once '../includes/db.php';
 require_once '../includes/users.php';

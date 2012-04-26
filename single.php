@@ -1,3 +1,6 @@
+
+
+<?php
 /* 
          *small description:This is the single page
          *The single page allows you to target and view a single piece of data within the set
@@ -9,9 +12,6 @@
 		 *@license New BSD Licence 
 		 *@version 1.0.0
 */
-
-<?php
-
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
 if (empty($id)) {

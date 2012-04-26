@@ -1,3 +1,5 @@
+
+<?php
 /**
 		 *small description: allows the user to store rating data
 		 *
@@ -8,8 +10,6 @@
 		 *@license New BSD Licence 
 		 *@version 1.0.0
 */
-<?php
-
 require_once 'includes/db.php';
 require_once 'includes/functions.php';
 

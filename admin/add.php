@@ -1,3 +1,6 @@
+
+
+<?php
 /**
 		 *small description: allows you to add an additional dataset
 		 *
@@ -8,8 +11,6 @@
 		 *@license New BSD Licence 
 		 *@version 1.0.0
 */
-
-<?php
 
 $errors = array();
 

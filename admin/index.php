@@ -1,4 +1,6 @@
-/* 
+
+  <?php
+  /* 
   *small description: This is the Admin index page.
   *
   * Here you can add, edit, or delete a dataset. 
@@ -11,8 +13,6 @@
   *@license New BSD Licence 
   *@version 1.0.0
 */
-
-  <?php
 
 require_once '../includes/db.php';
 

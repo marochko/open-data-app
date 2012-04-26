@@ -1,3 +1,5 @@
+
+<?php
 /**
 		 *small description: sign out function
 		 *
@@ -8,8 +10,6 @@
 		 *@license New BSD Licence 
 		 *@version 1.0.0
 */
-
-<?php
 
 require_once '../includes/users.php';
 

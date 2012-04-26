@@ -1,3 +1,5 @@
+
+<?php
 /**
 		 *small description: allows you to edit the dataset
 		 *
@@ -8,7 +10,6 @@
 		 *@license New BSD Licence 
 		 *@version 1.0.0
 */
-<?php
 
 require_once '../includes/db.php';
 

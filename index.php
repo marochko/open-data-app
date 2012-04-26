@@ -1,3 +1,6 @@
+
+
+<?php
 /* 
          *small description: This is the index page, or the homepage.
          *The primary functions are to link up all of the elements included in the app.
@@ -9,8 +12,6 @@
 		 *@license New BSD Licence 
 		 *@version 1.0.0
 */
-
-<?php
 
 require_once 'includes/db.php';
 

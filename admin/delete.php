@@ -1,3 +1,7 @@
+
+
+<?php
+
 /**
 		 *small description: allows you to delete the dataset
 		 *
@@ -8,8 +12,6 @@
 		 *@license New BSD Licence 
 		 *@version 1.0.0
 */
-
-<?php
 
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 

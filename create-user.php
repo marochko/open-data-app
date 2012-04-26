@@ -1,3 +1,5 @@
+
+<?php
 /* 
          *small description: This is the create-user page.
          *
@@ -10,8 +12,6 @@
 		 *@license New BSD Licence 
 		 *@version 1.0.0
 */
-*/ 
-<?php
 
 require_once 'includes/db.php';
 require_once 'includes/users.php';

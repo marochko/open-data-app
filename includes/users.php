@@ -1,3 +1,5 @@
+
+<?php
 /* 
          *small description: This is the users page.
          *It is in place so that we can have a password protected log-in function. 
@@ -9,7 +11,6 @@
 		 *@license New BSD Licence 
 		 *@version 1.0.0
 */
-<?php
 
 function user_create ($db, $email, $password) {
 $sql = $db->prepare('

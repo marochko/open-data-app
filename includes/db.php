@@ -1,3 +1,5 @@
+
+<?php
 /* 
          *small description: This is the database page.
          *It is in place to link up the sql with the dataset. 
@@ -9,8 +11,6 @@
 		 *@license New BSD Licence 
 		 *@version 1.0.0
 */
-<?php
-
 $user = getenv('DB_USER');
 $pass = getenv('DB_PASS');
 $dsn = stripslashes(getenv('DB_DSN'));

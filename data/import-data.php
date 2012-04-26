@@ -1,3 +1,5 @@
+
+<?php
 /**
 		 *small description: links with the kml file in order to retrieve data from the dataset.
 		 *
@@ -9,7 +11,6 @@
 		 *@version 1.0.0
 */
 
-<?php
 
 require_once '../includes/db.php';
 
