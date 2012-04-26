@@ -18,9 +18,8 @@ body {
 	position: absolute;
 	right: 0;
 	top: 0;
-	width: 75%;
+	width: 65%;
 	border:#000000;
-	border-radius:5px;
 }
 
 #dataset {
