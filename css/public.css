@@ -13,14 +13,14 @@ body {
 
 #map {
 	bottom: 0;
+	display:inline;
+	float:left;
 	position: absolute;
 	right: 0;
 	top: 0;
-	width:70%;
-}
-
-#side {
-	width:40%;
+	width: 75%;
+	border:#000000;
+	border-radius:5px;
 }
 
 #dataset {
