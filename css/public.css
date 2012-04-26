@@ -13,8 +13,6 @@ body {
 
 #map {
 	bottom: 0;
-	display:inline;
-	float:left;
 	position: absolute;
 	right: 0;
 	top: 0;
