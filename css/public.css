@@ -51,7 +51,8 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    width: 65%;
+    width: 50%;
+	height:100%;
 }
 
 #dataset {
