@@ -1,3 +1,13 @@
+/**
+		 *small description: allows you to edit the dataset
+		 *
+		 *@package 
+		 *@copyright 2012 Amanda Marochko
+		 *@author Amanda Marochko <amanda.marochko@gmail.com>
+		 *@link http://github.com/amandamarochko/open-data-app
+		 *@license New BSD Licence 
+		 *@version 1.0.0
+*/
 <?php
 
 require_once '../includes/db.php';

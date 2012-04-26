@@ -1,13 +1,15 @@
 /* 
-  * This is the create-user page.
-  *
-  * This page distinguishes who can access the admin pages of the application. 
-  * Links to the database.
-  * 
-  *
-  * @author  Amanda Marochko <amanda.marochko@gmail.com>
-  *
-  * @since 1.0
+         *small description: This is the create-user page.
+         *
+         *This page distinguishes who can access the admin pages of the application. 
+         *Links to the database.
+		 *@package 
+		 *@copyright 2012 Amanda Marochko
+		 *@author Amanda Marochko <amanda.marochko@gmail.com>
+		 *@link http://github.com/amandamarochko/open-data-app
+		 *@license New BSD Licence 
+		 *@version 1.0.0
+*/
 */ 
 <?php
 

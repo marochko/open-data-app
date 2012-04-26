@@ -1,14 +1,14 @@
 /* 
-  * This is the users page.
-  *
-  * It is in place so that we can have a password protected log-in function. 
-  * 
-  * 
-  *
-  * @author  Amanda Marochko <amanda.marochko@gmail.com>
-  *
-  * @since 1.0
-*/ 
+         *small description: This is the users page.
+         *It is in place so that we can have a password protected log-in function. 
+         * 
+		 *@package 
+		 *@copyright 2012 Amanda Marochko
+		 *@author Amanda Marochko <amanda.marochko@gmail.com>
+		 *@link http://github.com/amandamarochko/open-data-app
+		 *@license New BSD Licence 
+		 *@version 1.0.0
+*/
 <?php
 
 function user_create ($db, $email, $password) {

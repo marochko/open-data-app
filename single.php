@@ -1,13 +1,14 @@
 /* 
-  * This is the single page
-  *
-  * The single page allows you to target and view a single piece of data within the set.
-  * 
-  *
-  * @author  Amanda Marochko <amanda.marochko@gmail.com>
-  *
-  * @since 1.0
-*/ 
+         *small description:This is the single page
+         *The single page allows you to target and view a single piece of data within the set
+         *
+		 *@package 
+		 *@copyright 2012 Amanda Marochko
+		 *@author Amanda Marochko <amanda.marochko@gmail.com>
+		 *@link http://github.com/amandamarochko/open-data-app
+		 *@license New BSD Licence 
+		 *@version 1.0.0
+*/
 
 <?php
 

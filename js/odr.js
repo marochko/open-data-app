@@ -1,13 +1,15 @@
 /* 
-  * This is the ODR JS page.
+  *small description: This is the ODR JS page.
   *
   * Here you is where the application grabs functions in order to use google maps and 
   * geolocation so that the data is accurate in proximity to where you are. 
-  * 
-  *
-  * @author  Amanda Marochko <amanda.marochko@gmail.com>
-  *
-  * @since 1.0
+  *@package 
+  *@copyright 2012 Amanda Marochko
+  *@author Amanda Marochko <amanda.marochko@gmail.com>
+  *@link http://github.com/amandamarochko/open-data-app
+  *@license New BSD Licence 
+  *@version 1.0.0
+*/
 */ 
 
 

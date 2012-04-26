@@ -10,7 +10,7 @@ The ODR App serves as an application for Ottawa's avid skating fans. It allows y
 3. Administrative Panel
 
 ##Copyright 
-[License](https://github.com/amandamarochko/open-data-app/LICENSE.txt)
+[License](https://github.com/amandamarochko/open-data-app/blob/master/LICENSE.txt)
 
 ##Setup
 1. Open your MyPHP Admin
