@@ -82,7 +82,7 @@ $results = $db->query('
 </ol>
 </div>
 </div>
-<div id="map"></div>
+<div id="map" "position: absolute; right: 0px; top: 0px; overflow: hidden; width: 90%; height: 100%; z-index: 0;"></div>
 
 		
 		
